@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomNumberPicker</string>
+    <string name="date">%d / %d / %d</string>
+    <string name="add">Add</string>
+</resources>

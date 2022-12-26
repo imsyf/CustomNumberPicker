@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <at.playground.datepicker.ListPicker
+        android:id="@+id/picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/position"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@id/picker"
+        app:layout_constraintStart_toStartOf="@id/picker"
+        app:layout_constraintTop_toBottomOf="@id/picker"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_delete"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/picker"
+        app:layout_constraintStart_toStartOf="@id/picker"
+        app:layout_constraintTop_toBottomOf="@id/picker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
